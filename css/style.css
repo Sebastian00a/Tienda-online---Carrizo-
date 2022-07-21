@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Open Sans",sans-serif;
+}
+
+
+header{
+	height: 100px;
+	background: #2f3640;
+}
+
+body{
+	background-image: url(../img/istockphoto-1300208115-612x612.png);
+	background-attachment: fixed;
+	font-family: monospace;
+
+}
+
+
+ h1 h2 h3 h4{
+ 	font-family: 'Mulish', sans-serif;
+   
+}
+
+table {
+	font-family: 'Mulish', sans-serif;
+	font-size: 2rem
+
+
+}
+form{
+	font-family: 'Mulish', sans-serif;
+	font-size: 2rem
+
+}
+ 
+ 
+     nav ul {
+             list-style: none;
+            display: inline-block;
+
+     }
+
+        nav ul li {
+        	display: inline-block;
+        	margin-right: 10px;
+
+     }
+
+
+           
+           nav ul li a {
+	         color: white;
+             text-decoration: none;
+             font-family: 'Mulish', sans-serif;
+             font-size: 1.8rem;
+             font-weight: 200;
+            }
+
+            nav ul li a:hover{
+            	color: lightblue;
+            	fornt-weight : 600;
+            }
+ 
+article p{
+	font-family: 'Mulish', sans-serif;
+	font-size: 2rem;
+	line-height: 2rem ;
+	font-weight: 800;
+
+}
+
+h1{
+	color: #444;
+	text-align: center;
+    
+} 
+
+
+
+.bg-morado{
+	background: rgb( 34, 20, 43);
+}
+
+#botonera img{
+	width: 50px;
+}
+
+.navabar-white{
+	background: white;
+}
+
+.gallery{
+	width: auto;
+	height: 68vmin;
+	display: flex;
+	gap: 5px;
+}
+.gallery img{
+	height: 100%;
+	flex: 1;
+	object-fit: cover;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 10px;
+	transition:all 0.3s;
+}
+.gallery img:hover{
+	flex: 4;
+}
+
+
+.gallery-conteiners{
+	display: grid;
+	grid-auto-rows: 150px;
+	padding: 20px;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.galery__tittle{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 1);
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+@media (min-width: 700px) {
+    .gallery-conteiners{
+    	grid-template-columns: repeat(2,1fr);
+    }
+
+  }
+
+
+
+.redes{
+	text-align: right;
+	padding: 10px 0;
+}
+
+.redes__imagen{
+	width: 50%;
+}
+
+
+.glasEffect{
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur( 10px );
+	-webkit-backdrop-filter: blur( 10px);
+}
+
+.fade-conteiner{
+	box-shadow: inset 0 0 0 1000px #000000aa;
+	transition: box-shadow 400ms ;
+}
+
+.fade-conteiner:hover{
+	box-shadow: inset 0 0 0 1000px #00000000;
+}
+
+.bg-light{
+	background-color: white;
+
+}
+
+.novedades__articulo{
+	width: 80%;
+	height: 150px;
+	padding: 5px;
+	margin: 10px ;
+	border: solid black 2px;
+	overflow: auto ;
+}
+
+.textcolor{
+	background-image: url(./img/spantalla-de-colores-576x1024.jpg);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+
+}
+.conteinerdesplable{
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+.conteinerdesplable > .item{
+	min-width: 100%;
+	scroll-snap-align: start;
+}
+
+.secundaria{
+	width: 100%;
+}
+
+.search-box{
+	position: absolute;
+	top : 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #2C3441;
+	height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > input{
+	width: 200px;
+	padding: 0 10px;
+}
+.search-box:hover > .icon{
+	background: #536179;
+}
+.icon:hover{
+	transform: rotate(360deg) scale(0.8);
+}
+input{
+	width: 0;
+	border: none;
+	outline: none;
+	padding:  0;
+	background: none;
+	font-size: 1.1rem;
+	transition: 0.5s ease;
+	line-height: 40px;
+	color: #fff;
+
+}
+.icon{
+	color: #21DFCD;
+	float: right;
+	width: 40px;
+	font-size: 1.3rem;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	cursor: pointer;
+	text-decoration: none;
+}

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Extend G</title>
+	<link rel="shortcut icon"  href="../img/Alphabet-G-Transparent-Image.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8">
+	</script>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+   <header>
+		
+		<div class="inner-width">
+		   
+		   <a href="#" class="logo"><img src="../img/Logo.png" alt=""></a><i class="menu-toggle-btn fas fa-bars"></i>
+		   	<nav class="navigation-menu">
+		   		
+		   		<a href="../index.html"><i class="fas fa-home home"></i> Inicio</a>
+		   		<a href="../pages/juegos.html"><i class="fas fa-align-left about"></i> Juegos</a>
+		   		<a href="../pages/tienda.html"><i class="fab fa-buffer works"></i> Tienda</a>
+		   		<a href="../pages/ayuda.html"><i class="fas fa-users team"></i> Ayuda</a>
+		   		<a href="../pages/iniciar sesión.html"><i class="fas fa-headset contact"></i> Iniciar Sesion</a>
+		   		
+		   	</nav>
+		   
+		  </div>
+
+	
+
+           <div class="search-box ">
+	  		     <input type="text"
+	  		     list="lenguages" placeholder=" search...."/>
+	  		    
+	  		     <datalist id="lenguages">
+	  		     	<option value="Batman" />
+	  		     	<option value="Final Fantasy" />
+	  		     	<option value="The calisto Protocol" /> 
+	  		     	<option value="God of War Ragnarok" />
+	  		     </datalist>
+	  		      <a class="icon" >
+	  		      	<img src="../img/globe-fill.png" class="icon">
+	  		      <i class="fas fa-search"></i>	
+	  		     </a>
+	  	       </div>
+	  	       
+        </nav>
+
+	</header>
+   <main>
+   	   
+	 <h1 >Tienda</h1>
+	  <table border="5px" cellpadding="10px" cellspacing="15px" class="bg-fon"  >
+		 <tr>
+			<th>Juegos</th>
+			<th>Cod</th>
+			<th>Precio</th>
+		 </tr>
+		 <tr>
+			<td>Assassin's Creed</td>
+			<td>0001</td>
+			<td>$999,80</td>
+		 </tr>
+		 <tr>
+			<td>Assassin's Creed Bundle</td>
+			<td>0002</td>
+			<td>$5.299,82</td>
+		 </tr>
+		 <tr>
+			<td>Monster Hunter World</td>
+			<td>0003</td>
+			<td>$649,50</td>
+		 </tr>
+		 <tr>
+			<td>Monster Hunter World: Iceborne Digital Deluxe</td>
+			<td>0004</td>
+			<td>$1.124,50</td>
+		 </tr>
+		 <tr>
+			<td>Call Of Duty Modern Warfare</td>
+			<td>0005</td>
+			<td>$346,91</td>
+		 </tr>
+		 <tr>
+			<td>Call of Duty: Infinite Warfare Digital Legacy Edition</td>
+			<td>0006</td>
+			<td>$559,60</td>
+		 </tr>
+	  </table>
+   <section class="bg-fon">
+	 	<form action="envio.php">
+	 		<fieldset>
+	 			<legend>Compras</legend>
+	 		<label for="assassin's creed">Assassin's Creed</label>
+	 		<input type="checkbox" id="assassin's creed" value="">
+	 		<br>
+	 		<label for="monster hunter world">Monster Hunter World</label>
+	 		<input type="checkbox" id="monster hunter world" value="">
+	 		<br>
+	 		<label for="call of duty modern warfare">Call Of Duty Modern Warfare</label>
+	 		<input type="checkbox" id="call of duty modern warfare" value="" >
+	 		</fieldset>
+	 		<fieldset>
+	 			<legend>info de datos DLC</legend>
+	 			<label for="version expandida ">Version del juego DLC</label>
+	 			<input type="radio" id="version expandida" value="quiere el dlc" name="dlc">
+	 			<br>
+	 			<label for="version normal">Version del juego sin DLC</label>
+	 			<input type="radio" id="version normal" name="dlc">
+	 			<br>
+	 			<label for="plataforma">Plataforma</label>
+	 		    <select name="" id=""> 
+	 			    <option value="Epic">Epic games	</option>
+	 			    <option value="steam">Steam</option>
+	 			    <option value="ubisoft">Ubisotf</option>
+	 			 </select>
+	 		 </fieldset>
+            <input type="reset" value="Cancelar">
+            <input type="submit" value="Enviar">
+	 	 </form>
+	     </section>
+	      
+	  </main>
+	       
+	<footer class="redes" >
+		 <a href="https://twitter.com/" target="_blank"  >
+			<img src="../img/Twitter-logo.svg.png"alt="Siguenos en nuestra pagina" class="redes__imagen " >
+		 </a>
+		 <a href="https://facebook.com/"target="_blank">
+			<img src="../img/124010.png" alt="Siguenos en nuestra pagina" class="redes__imagen" >
+		 </a>
+		 <a href="https://www.instagram.com/"target="_blank" >
+			<img src="../img/Instagram_logo_2022.svg.png" alt="Siguenos en nuestra pagina" class="redes__imagen">
+			
+		  </a>
+
+	</footer>
+	 <script type="text/javascript">
+    	$(".menu-toggle-btn").click(function(){
+          $(this).toggleClass("fa-times");
+          $(".navigation-menu").toggleClass("active");
+    	});
+    </script>
+	
+</body>
+</html>
